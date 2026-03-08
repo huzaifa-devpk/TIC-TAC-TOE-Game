@@ -46,26 +46,26 @@ html, body{
   transition: all 2s ease;
 }
 
-.x{                     /*HTML me class define karne ki zaroorat nahi hai manually. JS se class add kar rahe ho, isliye HTML same reh sakta hai. Bas CSS me class likhni hoti hai. */
+.x{                   
   background-color: #457b9d;
   color: #fff;
   font-size: 8vmin;
 }
 
 .o{
-  background-color: #1d3557; /*#457b9d */
+  background-color: #1d3557; 
   color: #fff;
   font-size: 8vmin;
 }
 
-.winner{         /*winnig pattern highlight*/
+.winner{      
   background-color: #ffd166;
   color: black;
   box-shadow:0 0 20px black;
 }
 
 #reset-btn{
-  padding: 1rem;           /*charo side se gap a gya; padding kreny se*/
+  padding: 1rem;         
   border-radius: 1rem;
   border: none;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
@@ -106,5 +106,5 @@ html, body{
 }
 
 .hide{
-  display: none;    /*Game k start main na show ho */
+  display: none; 
 }
