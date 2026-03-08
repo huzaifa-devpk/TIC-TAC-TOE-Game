@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  background-color: aquamarine;
+  text-align: center;
+}
+
+#title{
+  color: #003366;
+  font-size: 3rem;
+}
+
+.container{
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game{
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box{
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  color: #fff;
+  background-color: #006666;
+  font-weight: bold;
+  transition: all 2s ease;
+}
+
+.x{                     /*HTML me class define karne ki zaroorat nahi hai manually. JS se class add kar rahe ho, isliye HTML same reh sakta hai. Bas CSS me class likhni hoti hai. */
+  background-color: #457b9d;
+  color: #fff;
+  font-size: 8vmin;
+}
+
+.o{
+  background-color: #1d3557; /*#457b9d */
+  color: #fff;
+  font-size: 8vmin;
+}
+
+.winner{         /*winnig pattern highlight*/
+  background-color: #ffd166;
+  color: black;
+  box-shadow:0 0 20px black;
+}
+
+#reset-btn{
+  padding: 1rem;           /*charo side se gap a gya; padding kreny se*/
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 1.25rem;
+  background-color: #003366;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+#new-btn{
+  padding: 1rem;       
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 1.25rem;
+  background-color: #003366;
+  color: #fff;
+}
+
+#reset-btn:hover{
+  box-shadow: 0 0 10px gold;
+  cursor: pointer;
+}
+
+#new-btn:hover{
+  box-shadow: 0 0 10px gold;
+  cursor: pointer;
+}
+
+#msg{
+  font-size: 7vmin;
+  color: #003366;
+}
+
+.msg-container{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.hide{
+  display: none;    /*Game k start main na show ho */
+}
